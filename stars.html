@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACEMASH</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/477/477406.png" type="image/x-icon">
+    <style>
+body {
+	font-family: Tahoma;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: darkblue;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	width: 175px;
+	height: 250px;
+	border: 2px solid #aaa;
+    object-fit: cover;
+}
+#header {
+	background-color: #8C1B08;
+	color: #fff;
+	padding: 5px;
+}
+#header a{
+	color: #fff;
+	text-decoration: none;
+}
+#main table {
+	margin: 0 auto;
+}
+#footer {
+	font: 12px Tahoma;
+	margin: 25px 0 50px 0;
+}
+#footer a {
+	margin-right: 10px;
+}
+    </style>
+</head>
+    <body>
+        <div id="header">
+            <h1><a>FACEMASH</a></h1>
+        </div>
+        <div id="main">
+            <h3>Were we let in for our looks? No. Will we be judged on them? Yes.</h3>
+            <h2>Who's Hotter? Click to Choose.</h2>
+            <table>
+                <tr>
+                    <td><div class="image-container"><img id = "image" src="https://cdn2.stylecraze.com/wp-content/uploads/2020/09/Beautiful-Women-In-The-World.jpg.webp" height="300px"/></div></td>
+                    <td>OR</td>
+                    <td><div class="image-container"><img id = "changeImageBtn" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/617359_v9_bb.jpg" height="300px"/></div></td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <a href="https://faridun01.pythonanywhere.com/">Home</a>
+            <a href="https://faridun01.pythonanywhere.com/get-started/">About</a>
+            <a href="https://faridun01.pythonanywhere.com/register/">Submit</a>
+            <a href="#">Rankings</a>
+        </div>
+        <script>
+                       setTimeout(function(){
+                name = prompt('Whats you\'r name !')
+                alert("WElcom to the football players mister " + name)
+            }, 10000);
+            const imageUrls = [
+                'https://cdn2.stylecraze.com/wp-content/uploads/2020/09/Beautiful-Women-In-The-World.jpg.webp',
+                'https://m.media-amazon.com/images/M/MV5BYWYwYzYzMjUtNWE0MS00NmJlLTljNGMtNzliYjg5NzQ1OWY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+                'https://armchairmogul.wordpress.com/wp-content/uploads/2012/12/scarlett-johansson-sexy.jpg?w=640',
+                'https://cdn2.stylecraze.com/wp-content/uploads/2013/06/Different-Beautiful-American-Girls.jpg.webp',
+                'https://i.ebayimg.com/images/g/aFwAAOSwWApi5vgi/s-l1200.png',
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ana_de_Armas%2C_March_2018%2C_GQ_Mexico_04_cropped.jpg/320px-Ana_de_Armas%2C_March_2018%2C_GQ_Mexico_04_cropped.jpg',
+                'https://people.com/thmb/0CivTh35IYpvab3uR_xYvwsvH2w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(726x123:728x125)/Jessica-Alba-Says-Doing-Therapy-Has-Given-Her-Daughters-A-Language-Where-they-can-Communicate-with-Me-081723-49e29906a2064e0aa613f72923148764.jpg',
+                'https://media.istockphoto.com/id/846730696/photo/portrait-teenager.jpg?s=612x612&w=0&k=20&c=6d8f-zZySNoqNYq2DpJP6bCHd7eyEuKj7T6M0O_RhGo=',
+                'https://i.pinimg.com/736x/a9/b6/df/a9b6df28805f99295186ed727ab26d5c.jpg',
+                'https://bipbap.ru/wp-content/uploads/2021/07/56-baifern-730x913.jpg',
+                'https://s00.yaplakal.com/pics/pics_original/5/8/2/4291285.jpg',
+                'https://i.pinimg.com/736x/54/e7/2e/54e72ef50f1638feaf98f3863efeaf88.jpg',
+                'https://basetop.ru/wp-content/uploads/2022/07/sp3yottn.jpg',
+                'https://bipbap.ru/wp-content/uploads/2021/07/69-melissa-benoist-730x878.jpg',
+                'https://mixnews.lv/wp-content/uploads/2023/06/8/1071906.jpeg',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1897428/pub_5e78c58cefd2591e38e82ee7_5e78c5986defea02288730c8/scale_2400',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1662927/pub_5e78c58cefd2591e38e82ee7_5e78c595c009e90420b8cc49/scale_1200',
+                'https://mixnews.lv/wp-content/uploads/2023/06/8/71d68abceade149fb87a99f0a007451f-scaled.jpeg',
+                
+            ];
+            let currentIndex = 0;
+            const imageUrls1 = [
+                'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/617359_v9_bb.jpg',
+                'https://moodiedavittreport.com/wp-content/uploads/2023/07/02_742_LANCOME_NY_233_AL_190_w6QC.jpg',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1895227/pub_5e78c58cefd2591e38e82ee7_5e78c59d01f2381716e6ede7/scale_1200',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1679483/pub_5e78c58cefd2591e38e82ee7_5e78c59fadc7b73f7d8df06d/scale_2400',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1908497/pub_5e78c58cefd2591e38e82ee7_5e78c59ff702ae63facf4414/scale_2400',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1779726/pub_5e78c58cefd2591e38e82ee7_5e78c67d38319e230cc318e7/scale_1200',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1596193/pub_5e78c58cefd2591e38e82ee7_5e78c6822a8e1c7e3922e6a6/scale_1200',
+                'https://avatars.dzeninfra.ru/get-zen_doc/1708007/pub_5e78c58cefd2591e38e82ee7_5e78c8534a6a9a79fd73e170/scale_1200',
+                'https://s11.stc.yc.kpcdn.net/share/i/3/1181364/wr-960.webp',
+                'https://normpost.ru/uploads/images/00/00/06/2018/01/20/0u7896ad90-76d17b53-116a7f5d.jpg',
+                'https://lh3.googleusercontent.com/proxy/6CdZfPYl1pRx1zWlgOhlA0PMLGCQ5LLsdiGRubP1WJlYJdunzUC6x2ym0SuNtk0sJv0csh13GxEaZJn8qlsBXX3oQLIznsViqhmyUCzbpd_r',
+                'https://sonko-mosreg.ru/800/600/http/img-cdn.brainberries.co/wp-content/uploads/2020/12/10-kristina-pimenova-.jpg',
+                'https://cojo.ru/wp-content/uploads/2022/12/nastia-zaripova-1.webp',
+                'https://st.peopletalk.ru/wp-content/uploads/2022/01/244233987_302736094992851_6378563704146689069_n-820x1024.jpg',
+                'https://mixnews.lv/wp-content/uploads/2024/01/10/2024-01-10-mixnews-z6dvkuktih0-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg',
+                'https://s16.stc.yc.kpcdn.net/share/i/4/1523096/wr-750.webp',
+                'https://ic.pics.livejournal.com/olgakaza82/47641961/56890/56890_600.jpg',
+
+            ]; // Replace with actual image URLs
+            let currentIndex1 = 0;
+    
+            document.getElementById('changeImageBtn').addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % imageUrls.length;
+                document.getElementById('image').src = imageUrls[currentIndex];
+            });
+            document.getElementById('image').addEventListener('click', function() {
+                currentIndex1 = (currentIndex1 + 1) % imageUrls1.length;
+                document.getElementById('changeImageBtn').src = imageUrls1[currentIndex1];
+            });
+        </script>
+    </body>
+</html>
